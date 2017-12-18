@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Zoo de Matanie</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize-v7.css">
+	<script src="js/script.js"></script>
+</head>
+<body onload="affBanniere('general',10)" id="haut">
+	<div id="main-wrapper">
+		<header>
+			<div id="header-top">
+				
+				<h1 id="logo"><a href="">Zoo de Matanie</a></h1>
+				
+				<nav id="nav-utilitaire">
+					<ul>
+						<li><a href="#">Conservation</a></li>
+						<li><a href="#">Recrutement</a></li>
+						<li><a href="parrainage.html">Parrainage</a></li>
+						<li><a href="#">Fondation</a></li>
+						<li><a href="#">English</a></li>
+					</ul>
+				</nav>
+			</div>	
+			
+			<div id="header-banner">
+				
+			</div>
+			
+		</header>
+		<div id="nav-bar">
+			<nav id="nav-principale">
+				<ul id="menu-deroulant">
+					<li id="actif"><a href="#">Accueil</a></li>          
+
+					<li> 	<!-- mettre le chevron font-awesome ds le a laisser un espace devant -->
+						<a href="#">Nos animaux <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+						<ul class="sous-menu">
+							<li><a href="#">Tous</a></li>
+							<li><a href="#">Amphibiens</a></li>
+							<li><a href="lion.html">Mammifères</a></li>
+							<li><a href="ara_militaire.html">Oiseaux</a></li>
+							<li><a href="#">Reptiles</a></li>
+						</ul>
+					</li> 
+					
+					<li>
+						<a href="activites.html">Zoo parc <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+						<ul class="sous-menu">
+							<li><a href="#">Cité marine</a></li>
+							<li><a href="#">Chemin brousse</a></li>
+							<li><a href="#">Piste safari</a></li>
+							<li><a href="#">Sentier des Incas</a></li>
+							<li><a href="#">Temple jungle</a></li>
+						</ul>
+
+					</li> 
+					<li><a href="#">Spectacles</a></li>
+					<li><a href="#">Tarifs</a></li>
+					<li>
+						<a href="#">Infos Zoo <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+						<ul class="sous-menu">
+							<li><a href="#">Règlements</a></li>
+							<li><a href="#">Restauration</a></li>
+							<li><a href="#">Services</a></li>
+						</ul>
+					</li>
+					
+					<li>
+						<a href="#">Contactez-nous <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+						<ul class="sous-menu">
+							<li><a href="#">Votre question</a></li>
+							<li><a href="benevolat.html">Bénévolat</a></li>
+						</ul>
+					</li>
+				</ul>
+
+				<!-- moteur de recherche ... -->
+				<div id="loupe">
+					<a onclick="showHide()">
+						<img src="images/search.png" alt="" />
+					</a>
+				</div>
+				<div id="form-recherche" > <!-- onmouseout="showHide('form-recherche')" -->
+					<form>
+						<input type="search" name="search" placeholder="Rechercher sur le site" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Rechercher sur le site'">
+						<input type="submit" name="submit" value="Rechercher">
+					</form>
+				</div>
+				
+			</nav>	<!-- fin menu-deroulant --> 
+		</div> <!-- fin nav-bar -->
+
+		<div id="content">
+			<ul id="nav-reseaux-sociaux">
+				<li><a href="#facebook"><img src="images/reseaux-sociaux/facebook.png"  alt="facebook" /></a></li>
+				<li><a href="#google"><img src="images/reseaux-sociaux/google+.png" alt="google+" /></a></li>
+				<li><a href="#instagram"><img src="images/reseaux-sociaux/instagram.png" alt="instagram" /></a></li>
+				<li><a href="#pinterest"><img src="images/reseaux-sociaux/pinterest.png" alt="pinterest" /></a></li>
+				<li><a href="#twitter"><img src="images/reseaux-sociaux/twitter.png" alt="twitter" /></a></li>
+				<li><a href="#youtube"><img src="images/reseaux-sociaux/youtube.png" alt="youtube" /></a></li>
+			</ul>
+
+			<div>
+				<h2>Zoo de Matanie une destination pour petits et grands.</h2>
+				<h3>Regards sauvages pour une rencontre nature!</h3>
+				<p>
+					Offrir une journée au Zoo de Matanie, c’est offrir des souvenirs pour la vie.
+				</p>
+				<p>
+					Venez découvrir ou redécouvrir le Zoo de Matanie plus de 300 animaux de 60 espèces témoignent de la faune des 5 continents. Mammifères et oiseaux peuplent 7 hectares du site.
+					
+				</p>
+				<hr>
+				<h2>Zoo de Matanie est heureux de vous accueillir</h2>
+
+				<h3><b>En famille ou entre amis, vivez une journée magnifique</b></h3>
+				<p>
+					Évadez-vous dans un parc hors du commun, Zoo de Matanie est unique en son genre : il allie Parc d'Attractions et Parc Animalier. Son originalité repose sur son choix de rassembler dans un cadre naturel extraordinaire de 50 hectares, dans la région Matane 27 attractions spectaculaires pour toute la famille, 700 animaux des 5 continents, en semi-liberté évoluant dans leur milieu naturel reconstitué et 3 spectacles animaliers inoubliables. Le Zoo est le 5<sup>e</sup> parc d'attractions au Canada.
+				</p>
+				<p>
+					Offrez-vous une véritable journée en safari, en immersion totale au milieu des animaux : accompagné de votre guide, montez à bord d'un Land Rover, et partez à l'aventure.
+				</p>
+				<hr>
+				<p>
+					Une visite au zoo de Matanie est un délice pour les enfants de tous âges, car des rencontres rapprochées avec de nombreuses créatures du monde deviennent une réalité. En entrant dans le zoo, dirigez-vous directement vers la Piste safari, où les éléphants d'Asie, les grands rhinocéros unicornes et les léopards obscurs paissent et socialisent dans un cadre naturel, avec des bassins totalisant 1 100 000 gallons d'eau. Le zoo connaît son public et a créé cinq itinéraires préplanifiés pour les familles qui comprennent des faits intéressants qui peuvent être appréciés par toute la famille.
+				</p>
+				<hr>
+				<p>
+					Ce qui a commencé comme le premier zoo du pays, le zoo de Matanie reste un refuge pour les 1500 animaux qui vivent sur le complexe de 42 acres. Abritant de nombreuses espèces en voie de disparition, y compris les léopards de l'Amour, les orangs-outans de Sumatra et un alligator chinois, le zoo fait preuve d'une grande responsabilité pour assurer la subsistance de chaque espèce menacée. Rendez visite aux plus vieux habitants du parc à l'exposition de tortues géantes d'Aldabra, où Bubba travaille lentement dans l'habitat depuis 1947!
+				</p>
+			</div>
+
+			<!-- Section Actualités & événements, subdivisé en 2 parties -->
+			<section id="sect-evenements">   <!-- CHANGER sect-evenements -->
+				<div id="actu1">
+					<h2>Naissance d’un jeune gorille à la Vallée des Singes</h2>
+
+					<p class="centre"><img src="images/bb-gorille.jpg" alt="Gorilles" /></p>
+					
+					<p>
+						Dans la nuit du 24 au 25 septembre, Hakuna a mis au monde son premier bébé. Hakuna est une femelle gorille arrivée à la Vallée des Singes il y a moins de deux ans. Plutôt solitaire, la femelle a soufflé ses 21 bougies, un âge assez avancé pour devenir mère chez cette espèce. Les femelles gorilles donnent en général la vie vers 12 ans puis ne seront à nouveau gestante qu’après 4 ou 5 ans. Un rythme de reproduction assez lent qui explique en partie pourquoi le braconnage des gorilles a un impact si important sur la pérennité de l’espèce.
+					</p>
+					<p>
+						Cependant, Hakuna a su recevoir les faveurs du dos argenté du groupe, Yaoundé, qui lui en revanche est un papa aguerri ! Il s’agit du 12ème bébé gorille qui naît à la Vallée des Singes. Le groupe compte donc à présent un mâle, quatre femelles et cinq jeunes qui à leur tour partiront quand le temps sera venu ! Déjà « six des jeunes sont partis en Europe et en Australie pour se reproduire : ils ont donné naissance à une nouvelle génération« , explique le zoo.
+					</p>
+				</div>
+			
+				<div id="actu2">
+					<h2>Une nouvelle panthère de Sri Lanka</h2>
+
+					<p class="centre"><img src="images/panthere-de-sri-lanka.jpg" alt="Panthere" /></p>
+					
+					<p>
+						Il y a peu, le couple star de panthères de Sri Lanka du Zoo de Maubeuge était composé de Will Pattu, le mâle, et de Yalla, sa femelle. Un couple heureux en ménage qui avait donné naissance en 2014 à Singa et Matara, deux femelles léopards. Mais la mort le 18 juin 2016 du mâle arrivé six ans plus tôt dans le parc français a brisé cette belle histoire. Atteint d’insuffisance rénale, le félin est pourtant mort de vieillesse, à 21 ans. Ne restaient donc plus que Yalla, Singa et Matara au Zoo de Maubeuge. Si Yalla est âgée de 14 ans et ne peut plus avoir de descendance, ses filles en revanche le peuvent. Singa étant partie en avril pour le zoo d’Ostrava en République Tchèque, Matara devient donc la seule femelle reproductrice du Zoo de Matanie. Ne restait plus qu’à lui trouver un Don Juan…
+					</p>
+					<p>
+						Et c’est là que Ludo intervient ! Arrivé le vendredi 20 octobre à Maubeuge, ce mâle panthère de Sri Lanka de quatre ans a été transféré à la demande du coordinateur du programme européen d’élevage depuis le zoo de Best, aux Pays-Bas. L’objectif est de former un nouveau couple reproducteur avec Matara, elle-même âgée de trois ans. Quant à la matriarche, Yalla, elle quittera prochainement le parc de Maubeuge afin de finir ses jours au calme.
+					</p>
+				</div>	
+
+				<div id="actu3">
+					<h2>Et si on passait Halloween au zoo ?</h2>
+
+					<p class="centre"><img src="images/thoiry.jpg" alt="Halloween" /></p>
+					
+					<p>
+						Le Zoo de Matanie propose deux événements pour Halloween. Le premier week-end des vacances scolaires, soit le 21-22 octobre, est consacré aux enfants de 6 à 14 ans et à leurs parents. L’énigme des jardins hantés verra les visiteurs se risquant dans les jardins du domaine se faire attraper par les monstres et sorcières. Ils devront gagner leur liberté en résolvant une énigme grâce à des indices. Si vous y parvenez, vous repartirez « les poches pleines de récompenses sucrées » !
+					</p>
+					<p>
+						Le week-end suivant est dédié aux adolescents et à leurs parents ! Du vendredi 27 au mardi 31 octobre se dérouleront les « murder parties du château » ! Un cluedo géant où les visiteurs devront deviner qui est le fantôme criminel en remportant diverses épreuves.
+					</p>
+				</div>	
+
+				<div id="actu4">
+					<h2>Naissances de lions et guépards au Parc des Félins</h2>
+
+					<p class="centre"><img src="images/bb-guépard.jpg" alt="Guépard" /></p>
+					
+					<p>
+						Ils se sont faits attendre mais ils sont bien là : le Parc des Félins a accueilli sa première portée de guépards ! Nés le 7 juillet dernier, cinq petits – 4 mâles et 1 femelle – ont en effet vu le jour dans le parc spécialisé. C’est Frela, la femelle de 6 ans arrivée cette année en Seine-et-Marne, qui a offert ce beau cadeau d’arrivée. Les petits s’aventurent un peu plus chaque jour dans leur enclos extérieur, mais si vous ne les voyez pas c’est que leur mère continue à les protéger des regards dans l’abri. Baptisés Tolwe, Isabis, Soweto et Mafadi, pour les mâles, et Naïra pour l’unique femelle, les cinq petits et leur mère sont visibles non pas à l’entrée du parc, où d’autres guépards vous accueillent, mais sur un autre territoire visible lui depuis le trans’félins, circuit en train de 30 minutes compris dans votre billet d’entrée.
+					</p>
+				</div>
+				<div id="actu5">
+					<h2>Les pandas du Parc sont nés !</h2>
+
+					<p class="centre"><img src="images/bb-panda-2.jpg" alt="Panda" /></p>
+					
+					<p>
+						Même les médias asiatiques et américains en parlent : moins de dix jours après l’annonce officielle de sa gestation, Huan Huan a mis au monde ses deux bébés ce vendredi ! Extrêmement rare en parc animalier, cet événement est l’aboutissement de plusieurs années de travail des équipes du ZooParc de Beauval. La première perte des eaux a eu lieu autour de 18h, puis les premières contractions ont débuté vers 18h17… et les deux petits ont finalement vu le jour à 22h18 et 22h32.
+					</p>
+					<p>
+						Les deux petits sont alors sous la vigilance permanente des soigneurs du parc et des deux spécialistes spécialement arrivées de Chine, cinq caméras et un micro ayant été installés dans la loge de Huan Huan. Mais l’état du premier né se dégrade et peu après minuit, le ZooParc de Beauval annonce le décès du bébé panda, une petite femelle.
+					</p>
+				</div>
+				
+				<aside id="evenements">
+					<h3 class="centre">Activités &amp; Événements</h3>
+					
+					<!-- autre code à venir... -->
+				
+					<div class="box" onclick="affTexte('actu1')">
+						<img src="images/bb-gorille-actu.jpg" alt="Gorilles" />
+						<div class="full-caption">
+							<h4>Naissance d’un jeune gorille.</h4>
+							<!-- autre icone que celle presente -->
+							<span class="fa fa-location-arrow"></span>&nbsp;<a>En savoir +</a>
+						</div>
+					</div>
+					
+					<div class="box" onclick="affTexte('actu2')">
+						<img src="images/panthere-de-sri-lanka-actu.jpg" alt="Panthere" />
+						<div class="full-caption">
+							<h4>Une nouvelle panthère de Sri Lanka.</h4>
+							<!-- autre icone que celle presente -->
+							<span class="fa fa-location-arrow"></span>&nbsp;<a>En savoir +</a>
+						</div>
+					</div>
+					
+					<div class="box" onclick="affTexte('actu3')">
+						<img src="images/thoiry-actu.jpg" alt="Halloween" />
+						<div class="full-caption">
+							<h4>Et si on passait Halloween au zoo ?</h4>
+							<!-- autre icone que celle presente -->
+							<span class="fa fa-location-arrow"></span>&nbsp;<a>En savoir +</a>
+						</div>
+					</div>
+
+					<div class="box" onclick="affTexte('actu4')">
+						<img src="images/bb-guépard-actu.jpg" alt="Petits guépards" />
+						<div class="full-caption">
+							<h4>Naissances de lions et guépards.</h4>
+							<!-- autre icone que celle presente -->
+							<span class="fa fa-location-arrow"></span>&nbsp;<a>En savoir +</a>
+						</div>
+					</div>
+
+					<div class="box" onclick="affTexte('actu5')">
+						<img src="images/bb-panda-actu.jpg" alt="Petit panda" />
+						<div class="full-caption">
+							<h4>Les pandas du Parc sont nés !</h4>
+							<!-- autre icone que celle presente -->
+							<span class="fa fa-location-arrow"></span>&nbsp;<a>En savoir +</a>
+						</div>
+					</div>
+				</aside>
+			</section>
+			
+			<div id="tableau-images">
+				<h2>Nos animaux</h2>
+				<table>   
+					<tr>
+						<td colspan="2"><a href="#"><span>Boa-demeraude</span><img src="images/tableau-images/boa-demeraude.jpg" alt="Boa-demeraude" /></a></td>
+						<td colspan="2"><a href="#"><span>Guepard</span><img src="images/tableau-images/guepard.jpg" alt="Guepard" /></a></td>
+						<td><a href="#"><span>Tigre-blanc</span><img src="images/tableau-images/tigre-blanc.jpg" alt="Tigre-blanc" /></a></td>
+						<td><a href="#"><span>Loriquets</span><img src="images/tableau-images/loriquets.jpg" alt="Loriquets" /></a></td>
+					</tr>
+					<tr>
+						<td rowspan="2"><a href="#"><span>Flamant</span><img src="images/tableau-images/flamant.jpg" alt="Flamant" /></a></td>
+						<td><a href="#"><span>Panda</span><img src="images/tableau-images/panda1.jpg" alt="Panda" /></a></td>
+						<td><a href="#"><span>Panthere</span><img src="images/tableau-images/panthere.jpg" alt="Panthere" /></a></td>
+						<td><a href="lion.html"><span>Lion*</span><img src="images/tableau-images/lion.jpg" alt="Lion" /></a></td>
+						<td rowspan="2"><a href="#"><span>Zebre</span><img src="images/tableau-images/zebre2.jpg" alt="Zebre" /></a></td>
+						<td><a href="#"><span>Maki</span><img src="images/tableau-images/maki.jpg" alt="Maki" /></a></td>
+					</tr>
+					<tr>
+						<td rowspan="2"><a href="#"><span>Zebre</span><img src="images/tableau-images/zebre.jpg" alt="Zebre" /></a></td>
+						<td rowspan="2" colspan="2"><a href="#"><span>Tigre</span><img src="images/tableau-images/tigre.jpg" alt="Tigre" /></a></td>
+						<td><a href="#"><span>Panthere-noire</span><img src="images/tableau-images/panthere-noire.jpg" alt="Panthere-noire" /></a></td>
+					</tr>
+					<tr>
+						<td><a href="#"><span>Alpaga</span><img src="images/tableau-images/alpaga.jpg" alt="Alpaga" /></a></td>
+						<td><a href="#"><span>Pelican-blanc</span><img src="images/tableau-images/pelican-blanc.jpg" alt="Pelican-blanc" /></a></td>
+						<td><a href="#"><span>Orang-outan</span><img src="images/tableau-images/orang-outan.jpg" alt="Orang-outan" /></a></td>
+					</tr>
+					<tr>
+						<td><a href="#"><span>Suricate</span><img src="images/tableau-images/suricate.jpg" alt="Suricate" /></a></td>
+						<td><a href="#"><span>Python-royal</span><img src="images/tableau-images/python-royal.jpg" alt="Python-royal" /></a></td>
+						<td><a href="#"><span>Loutre-dasie</span><img src="images/tableau-images/loutre-dasie.jpg" alt="Loutre-dasie" /></a></td>
+						<td rowspan="2"><a href="#"><span>Effraie-des-clochers</span><img src="images/tableau-images/effraie-des-clochers.jpg" alt="Effraie-des-clochers" /></a></td>
+						<td colspan="2"><a href="#"><span>Panda-roux</span><img src="images/tableau-images/panda-roux.jpg" alt="Panda-roux" /></a></td>
+					</tr>
+					<tr>
+						<td><a href="#"><span>Alligator</span><img src="images/tableau-images/alligator.jpg" alt="Alligator" /></a></td>
+						<td colspan="2"><a href="ara_militaire.html"><span>Ara-militaire*</span><img src="images/tableau-images/ara-militaire.jpg" alt="Ara-militaire" /></a></td>
+						<td><a href="#"><span>Lemur-noir-blanc</span><img src="images/tableau-images/lemur-noir-blanc2.jpg" alt="Lemur-noir-blanc" /></a></td>
+						<td><a href="#"><span>Hippotame</span><img src="images/tableau-images/hippotame.jpg" alt="Hippotame" /></a></td>
+					</tr>
+				</table>
+			</div>
+
+		</div>
+		
+		<footer>
+			<div id="pied-page">
+				<nav id="nav-pied-page">
+					<ul>
+						<li><h4><a href="index.html">Accueil</a></h4></li>
+					</ul>
+					
+					<ul>
+						<li><h4>Nos animaux</h4></li>
+						<li><a href="#">Tous</a></li>
+						<li><a href="#">Amphibiens</a></li>
+						<li><a href="lion.html">Mammifères</a></li>
+						<li><a href="ara_militaire.html">Oiseaux</a></li>
+						<li><a href="#">Reptiles</a></li>
+					</ul>
+					
+					<ul>
+						<li><h4>Zoo parc</h4></li>
+						<li><a href="#">Cité marine</a></li>
+						<li><a href="#">Chemin brousse</a></li>
+						<li><a href="#">Piste safari</a></li>
+						<li><a href="#">Sentier des Incas</a></li>
+						<li><a href="#">Temple jungle</a></li>
+					</ul>
+					<ul>
+						<li><h4><a href="#">Spectacles</a></h4></li>
+					</ul>
+					<ul>
+						<li><h4><a href="#">Tarifs</a></h4></li>
+					</ul>				
+					<ul>
+						<li><h4>Infos Zoo</h4></li>
+						<li><a href="#">Réglements</a></li>
+						<li><a href="#">Restauration</a></li>
+						<li><a href="#">Services</a></li>
+					</ul>
+					
+					<ul>
+						<li><h4>Contactez-nous</h4></li>
+						<li><a href="#">Votre question</a></li>
+						<li><a href="benevolat.html">Bénévolat</a></li>
+						<li><a href="#">Services</a></li>
+					</ul>
+					
+				</nav><!-- fin nav pied page -->
+			</div> <!-- fin pied-page -->
+			
+			
+			<div id="containerReturn">
+				<div id="returnOnTop">
+					<a href="#haut" title="Retour en haut">
+						<img src="images/haut-page.png" alt="haut page" />
+					</a>
+				</div>
+			</div>
+
+			<p id="copyright">
+				&copy; 2017 Florimond Jouffroy | <a href="mailto:florimond.25@gmail.com">Florimond.25@gmail.com</a><br/>
+				Réalisé dans le cadre scolaire de 1<sup>re</sup> session au collégial
+			</p>
+			
+			
+			
+		</footer>
+	</div>
+	
+</body>
+</html>

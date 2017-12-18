@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Parrainage - Zoo de Matanie</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize-v7.css">
+	<script src="js/script.js"></script>
+</head>
+<body onload="affBanniere('general',10)" id="haut">
+	<div id="main-wrapper">
+		<header>
+			<div id="header-top">
+				
+				<h1 id="logo"><a href="index.html">Zoo de Matanie</a></h1>
+				
+				<nav id="nav-utilitaire">
+					<ul>
+						<li><a href="#">Conservation</a></li>
+						<li><a href="#">Recrutement</a></li>
+						<li id="actif"><a href="parrainage.html">Parrainage</a></li>
+						<li><a href="#">Fondation</a></li>
+						<li><a href="#">English</a></li>
+					</ul>
+				</nav>
+			</div>	
+			
+			<div id="header-banner">
+				
+			</div>
+			
+		</header>
+		<div id="nav-bar">
+			<nav id="nav-principale">
+				<ul id="menu-deroulant">
+					<li><a href="index.html">Accueil</a></li>          
+
+					<li>
+						<a href="#">Nos animaux <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+						<ul class="sous-menu">
+							<li><a href="#">Tous</a></li>
+							<li><a href="#">Amphibiens</a></li>
+							<li><a href="lion.html">Mammifères</a></li>
+							<li><a href="ara_militaire.html">Oiseaux</a></li>
+							<li><a href="#">Reptiles</a></li>
+						</ul>
+					</li> 
+					
+					<li>
+						<a href="activites.html">Zoo parc <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+						<ul class="sous-menu">
+							<li><a href="#">Cité marine</a></li>
+							<li><a href="#">Chemin brousse</a></li>
+							<li><a href="#">Piste safari</a></li>
+							<li><a href="#">Sentier des Incas</a></li>
+							<li><a href="#">Temple jungle</a></li>
+						</ul>
+
+					</li> 
+					<li><a href="#">Spectacles</a></li>
+					<li><a href="#">Tarifs</a></li>
+					<li>
+						<a href="#">Infos Zoo <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+						<ul class="sous-menu">
+							<li><a href="#">Règlements</a></li>
+							<li><a href="#">Restauration</a></li>
+							<li><a href="#">Services</a></li>
+						</ul>
+					</li>
+					
+					<li>
+						<a href="#">Contactez-nous <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+						<ul class="sous-menu">
+							<li><a href="#">Votre question</a></li>
+							<li><a href="benevolat.html">Bénévolat</a></li>
+						</ul>
+					</li>
+				</ul>
+
+				<!-- moteur de recherche ... -->
+				<div id="loupe">
+					<a onclick="showHide()">
+						<img src="images/search.png" alt="" />
+					</a>
+				</div>
+				<div id="form-recherche" > <!-- onmouseout="showHide('form-recherche')" -->
+					<form>
+						<input type="search" name="search" placeholder="Rechercher sur le site" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Rechercher sur le site'">
+						<input type="submit" name="submit" value="Rechercher">
+					</form>
+				</div>
+				
+			</nav>	<!-- fin menu-deroulant --> 
+		</div> <!-- fin nav-bar -->
+
+		<div id="content">
+			<ul id="nav-reseaux-sociaux">
+				<li><a href="#facebook"><img src="images/reseaux-sociaux/facebook.png"  alt="facebook" /></a></li>
+				<li><a href="#google"><img src="images/reseaux-sociaux/google+.png" alt="google+" /></a></li>
+				<li><a href="#instagram"><img src="images/reseaux-sociaux/instagram.png" alt="instagram" /></a></li>
+				<li><a href="#pinterest"><img src="images/reseaux-sociaux/pinterest.png" alt="pinterest" /></a></li>
+				<li><a href="#twitter"><img src="images/reseaux-sociaux/twitter.png" alt="twitter" /></a></li>
+				<li><a href="#youtube"><img src="images/reseaux-sociaux/youtube.png" alt="youtube" /></a></li>
+			</ul>
+
+			<h2>Parrainage</h2>
+			<ul class="listParrainage" id="listAncres">
+				<li><a href="#titreUn">Parents adoptifs</a></li>
+				<li><a href="#titreDeux">Découvrez le programme Parents adoptifs</a></li>
+				<li><a href="#titreTrois">Qui peut adopter un animal</a></li>
+				<li><a href="#titreQuatre">Comment doit-on faire?</a></li>
+				<li><a href="#titreCinq">Prêt à parrainer</a></li>
+				<li><a href="#titreSix">Communiquez avec notre service à la clientèle</a></li>
+			</ul>
+			
+			
+
+			<h3 id="titreUn">Parents adoptifs</h3>
+			<div class="containerParrainage">
+				<p>
+					<img src="images/D-parents-adoptifs.jpg" alt="Parents adoptifs">
+				</p>
+				
+				<p class="bloc">
+					Vous avez le coup de foudre pour l'une des vedettes de la collection animale du Zoo de Matanie. Vous aimeriez vous impliquer dans le bien-être de nos pensionnaires? C'est maintenant possible avec notre programme Parent adoptif.
+				</p>
+			</div>
+			
+			
+			<h3 id="titreDeux">Découvrez le programme Parents adoptifs</h3>
+			<p>
+				Grâce à cette initiative, vous créez un lien unique avec l’animal de votre choix. Vous contribuez également aux soins de nos pensionnaires dont les besoins alimentaires sont très variés : 
+			</p>
+			<ul class="listParrainage">
+				<li>50 000 kg de nourriture sèche</li>
+				<li>15 500 kg de viande</li>
+				<li>300 douzaines d’œufs</li>
+				<li>2 300 kg de carottes</li>
+				<li>65 000 grillons</li>
+				<li>13 800 rats et souris</li>
+				<li>34 000 vers de farine</li>
+				<li>95 000 kg de foin… et plus encore!</li>
+			</ul>
+				
+			<h3 id="titreTrois">Qui peut adopter un animal ?</h3>
+			<p>
+				N’importe qui peut adopter un animal du Zoo de Matanie : particulier, famille, groupe scolaire, entreprise, club social…
+			</p>
+			<p>
+				Pour souligner un événement, c’est un présent exotique et complètement original.
+			</p>
+
+			<p class="centre">
+				<img class="imgRadius" src="images/petit-lynx.jpg" alt="bébé lynx">
+			</p>
+			
+
+			<h4>Quels sont les plans d’adoption annuels?</h4>
+
+			<p>
+				Tentés d’adhérer aux programmes Parents adoptifs? Nous vous offrons plusieurs façons d’en profiter. 
+			</p>
+
+			<a href="Zoo_Formulaire_Parents_Adoptifs_FR_FNL.pdf">Voir les plans d'adoption</a>
+
+
+			<h3 id="titreQuatre">Comment doit-on faire?</h3>
+			<p>
+				Adopter un animal, c’est tout simple. Voici la procédure à suivre, en 4 étapes :   
+			</p>
+			<ol>
+				<li>Choisissez votre animal favori</li>
+				<li>Sélectionnez votre plan d’adoption</li>
+				<li>Complétez le formulaire</li>
+				<li>Postez-le avec votre contribution, à l’ordre de la Société zoologique de Granby</li>
+			</ol>
+			<a href="Zoo_Formulaire_Parents_Adoptifs_FR_FNL.pdf">Remplir le formulaire </a>
+
+
+			<h3 id="titreCinq">Attention! Prêt à parrainer</h3>
+			
+			<div class="containerParrainage">
+				<div class="bloc">
+					<h4>Animaux à adopter recherchent parents bien particuliers.</h4>
+					<p>
+						Elles nous font rire avec leurs pitreries ou nous font pousser des « Oh! » et des « Ah! » admiratifs : ce sont les vedettes du Zoo de Matanie qui feront chavirer votre cœur.
+					</p>
+					<ul class="listParrainage">
+						<li>Kayah, le panda roux</li>
+						<li>Sarah, l'éléphant d'Afrique</li>
+						<li>K.C., le rhinocéros blanc</li>
+						<li>Polita, l'hippopotame commun</li>
+						<li>Masaï, la girafe barigo</li>
+						<li>Mazyria, le tigre de l'Amour</li>
+						<li>Snowflake, le léopard des neiges</li>
+						<li>Zwlani, le gorille des plaines</li>
+					</ul>
+					<p>Et, bien d'autres disponibles…</p>
+				</div>
+				<p class="centre">
+					<img src="images/lionceaux.jpg" alt="petits Lyonceaux">
+				</p>
+				
+			</div>
+			
+			
+
+
+
+			<h3 id="titreSix">Communiquez avec notre service à la clientèle</h3>
+			<p>
+				Pour plus d'information, voici nos coordonnées.<br>
+				Téléphone : 418 562-1240, poste 3258<br>
+				Courriel : <a href="mailto:Florimond.25@gmail.com">parentadoptif@zoodematanie.com</a><br>
+			</p>
+
+		</div>
+		
+		<footer>
+			<div id="pied-page">
+				<nav id="nav-pied-page">
+					<ul>
+						<li><h4><a href="index.html">Accueil</a></h4></li>
+					</ul>
+					
+					<ul>
+						<li><h4>Nos animaux</h4></li>
+						<li><a href="#">Tous</a></li>
+						<li><a href="#">Amphibiens</a></li>
+						<li><a href="lion.html">Mammifères</a></li>
+						<li><a href="ara_militaire.html">Oiseaux</a></li>
+						<li><a href="#">Reptiles</a></li>
+					</ul>
+					
+					<ul>
+						<li><h4>Zoo parc</h4></li>
+						<li><a href="#">Cité marine</a></li>
+						<li><a href="#">Chemin brousse</a></li>
+						<li><a href="#">Piste safari</a></li>
+						<li><a href="#">Sentier des Incas</a></li>
+						<li><a href="#">Temple jungle</a></li>
+					</ul>
+					<ul>
+						<li><h4><a href="#">Spectacles</a></h4></li>
+					</ul>
+					<ul>
+						<li><h4><a href="#">Tarifs</a></h4></li>
+					</ul>				
+					<ul>
+						<li><h4>Infos Zoo</h4></li>
+						<li><a href="#">Réglements</a></li>
+						<li><a href="#">Restauration</a></li>
+						<li><a href="#">Services</a></li>
+					</ul>
+					
+					<ul>
+						<li><h4>Contactez-nous</h4></li>
+						<li><a href="#">Votre question</a></li>
+						<li><a href="benevolat.html">Bénévolat</a></li>
+						<li><a href="#">Services</a></li>
+					</ul>
+					
+				</nav><!-- fin nav pied page -->
+			</div> <!-- fin pied-page -->
+			
+			<div id="containerReturn">
+				<div id="returnOnTop">
+					<a href="#haut" title="Retour en haut">
+						<img src="images/haut-page.png" alt="haut page" />
+					</a>
+				</div>
+			</div>
+
+			<p id="copyright">
+				&copy; 2017 Florimond Jouffroy | <a href="mailto:florimond.25@gmail.com">Florimond.25@gmail.com</a><br/>
+				Réalisé dans le cadre scolaire de 1<sup>re</sup> session au collégial
+			</p>
+			
+		</footer>
+	</div>
+	
+</body>
+</html>

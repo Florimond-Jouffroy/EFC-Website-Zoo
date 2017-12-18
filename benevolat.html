@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Bénévolat - Contactez-nous - Zoo de Matanie</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize-v7.css">
+	<script src="js/script.js"></script>
+</head>
+<body onload="affBanniere('general',10); initFormBenevolat()" id="haut">
+	<div id="main-wrapper">
+		<header>
+			<div id="header-top">
+				
+				<h1 id="logo"><a href="">Zoo de Matanie</a></h1>
+				
+				<nav id="nav-utilitaire">
+					<ul>
+						<li><a href="#">Conservation</a></li>
+						<li><a href="#">Recrutement</a></li>
+						<li><a href="parrainage.html">Parrainage</a></li>
+						<li><a href="#">Fondation</a></li>
+						<li><a href="#">English</a></li>
+					</ul>
+				</nav>
+			</div>	
+			
+			<div id="header-banner">
+				
+			</div>
+			
+		</header>
+		<div id="nav-bar">
+			<nav id="nav-principale">
+				<ul id="menu-deroulant">
+					<li ><a href="index.html">Accueil</a></li>          
+
+					<li> 	<!-- mettre le chevron font-awesome ds le a laisser un espace devant -->
+						<a href="#">Nos animaux <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+						<ul class="sous-menu">
+							<li><a href="#">Tous</a></li>
+							<li><a href="#">Amphibiens</a></li>
+							<li><a href="lion.html">Mammifères</a></li>
+							<li><a href="ara_militaire.html">Oiseaux</a></li>
+							<li><a href="#">Reptiles</a></li>
+						</ul>
+					</li> 
+					
+					<li>
+						<a href="activites.html">Zoo parc <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+						<ul class="sous-menu">
+							<li><a href="#">Cité marine</a></li>
+							<li><a href="#">Chemin brousse</a></li>
+							<li><a href="#">Piste safari</a></li>
+							<li><a href="#">Sentier des Incas</a></li>
+							<li><a href="#">Temple jungle</a></li>
+						</ul>
+
+					</li> 
+					<li><a href="#">Spectacles</a></li>
+					<li><a href="#">Tarifs</a></li>
+					<li>
+						<a href="#">Infos Zoo <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+						<ul class="sous-menu">
+							<li><a href="#">Règlements</a></li>
+							<li><a href="#">Restauration</a></li>
+							<li><a href="#">Services</a></li>
+						</ul>
+					</li>
+					
+					<li id="actif">
+						<a href="#">Contactez-nous <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+						<ul class="sous-menu">
+							<li><a href="#">Votre question</a></li>
+							<li><a href="#">Bénévolat</a></li>
+						</ul>
+					</li>
+				</ul>
+
+				<!-- moteur de recherche ... -->
+				<div id="loupe">
+					<a onclick="showHide()">
+						<img src="images/search.png" alt="" />
+					</a>
+				</div>
+				<div id="form-recherche" > <!-- onmouseout="showHide('form-recherche')" -->
+					<form>
+						<input type="search" name="search" placeholder="Rechercher sur le site" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Rechercher sur le site'">
+						<input type="submit" name="submit" value="Rechercher">
+					</form>
+				</div>
+				
+			</nav>	<!-- fin menu-deroulant --> 
+		</div> <!-- fin nav-bar -->
+
+		<div id="content">
+			<ul id="nav-reseaux-sociaux">
+				<li><a href="#facebook"><img src="images/reseaux-sociaux/facebook.png"  alt="facebook" /></a></li>
+				<li><a href="#google"><img src="images/reseaux-sociaux/google+.png" alt="google+" /></a></li>
+				<li><a href="#instagram"><img src="images/reseaux-sociaux/instagram.png" alt="instagram" /></a></li>
+				<li><a href="#pinterest"><img src="images/reseaux-sociaux/pinterest.png" alt="pinterest" /></a></li>
+				<li><a href="#twitter"><img src="images/reseaux-sociaux/twitter.png" alt="twitter" /></a></li>
+				<li><a href="#youtube"><img src="images/reseaux-sociaux/youtube.png" alt="youtube" /></a></li>
+			</ul>
+
+			<form id="form-benevolat"  onsubmit="return validerForm()" method="post" enctype="text/plain">
+
+				<p id="remarque">Les champs indiqués d’un ( * ) sont obligatoires.</p>
+				<p id="confirm-envoi">&nbsp;</p>
+				<!-- Regroupement des infos personnelles -->
+				
+				<fieldset id="fieldInfos">
+					<legend>Informations personnelles</legend>
+					<p>
+						<label for="nom">* Nom </label>
+						<input id="nom" name="nom" type="text" size="40" autofocus/>
+					</p>
+					<p class="radioBox">
+						<label >* Sexe </label>
+						<span class="radioBox-ligne">
+							<label for="homme">Homme</label>
+							<input id="homme" type="radio" name="sexe" value="homme">
+							<label for="femme">Femme</label>
+							<input id="femme" type="radio" name="sexe" value="femme">
+						</span>
+					</p>
+					<p id="erreurSexe" class="erreur"><!-- Affichage dynamique --></p>
+					<p>
+						<label for="date">* Date de naissance :</label>
+						<!-- step="3" interval -->
+						<input id="date" name="date" type="date"  required /> 
+						<i>Format : aaaa-mm-jj</i>
+					</p>
+					<p>
+						<label for="ville">* Ville :</label>
+						<input id="ville" name="ville" type="text" size="40" required /> 
+					</p>
+					<p>
+						<label for="courriel">* Courriel :</label>
+						<input id="courriel" type="email" name="courriel" size="40" required />
+					</p>
+					<p class="case-cocher">
+						<label>* Langues parlées :</label>
+						<span class="case-cocher-ligne">
+							<input type="checkbox" id="français" name="langue" value="Français" />
+							<label for="français">Français</label>
+							<br />
+							<input type="checkbox" id="anglais" name="langue" value="Anglais" />
+							<label for="anglais">Anglais</label>
+							<br />
+							<input type="checkbox" id="espagnol" name="langue" value="Espagnol" />
+							<label for="espagnol">Espagnol</label>
+							<br />
+							<input type="checkbox" id="italien" name="langue" value="Italien" />
+							<label for="italien">Italien</label>
+							<br />
+							<input type="checkbox" id="autres" name="langue" value="Autres" />
+							<label for="autres">Autres</label>
+						</span>
+					</p>
+					<p id="erreurLangue" class="erreur"><!-- Affichage dynamique --></p>
+				</fieldset>
+				<fieldset id="fielBenevolat">
+					<legend>Bénévolat</legend>
+					<p>
+						Veuillez fournir <strong>deux courriels</strong> pour vos références : (ex. employeur, enseignants, autre organisme avec lequel vous avez travaillé). »
+					</p>
+					<p class="radioBox">
+						<label>* Avez-vous déjà une expérience :</label>
+						<span class="radioBox-ligne">
+							<label for="oui">Oui</label>
+							<input id="oui" type="radio" name="exeperience" value="Oui">
+							<label for="non">Non</label>
+							<input id="non" type="radio" name="exeperience" value="Non">
+						</span>
+					</p>
+					<p>
+						<label for="poste">Indiquez le poste qui vous intéresse : </label>
+						<select id="poste" name="poste">
+							<option selected>Votre choix</option>
+							<option>Animateur</option>
+							<option>Gardien d'animaux</option>
+							<option>Santé animale</option>
+							<option>Soigneur animalier</option>
+							<option>Soigneur mammifères marins</option>
+							<option>Soigneur en aquarium</option>
+							<option>N'importe quel poste</option>
+						</select>
+					</p>
+					<p id="erreurPoste" class="erreur"><!-- Affichage dynamique --></p>
+
+					<p>
+						<label for="ref1">* Référence 1 :</label>
+						<input id="ref1" type="email" name="ref1" size="40" placeholder=" login@domaine.qc.ca" />
+					</p>
+
+					<p>
+						<label for="ref2">* Référence 2 :</label>
+						<input id="ref2" type="email" name="ref2" size="40" placeholder=" login@domaine.qc.ca" />
+					</p>
+					<p id="zone-commentaire">
+						<label>Quelles sont vos motivations :</label>
+						<textarea id="motivations" name="motivations" cols="43" rows="5" required></textarea>
+					</p>
+
+					<p id="zone-submit">
+						<input id="btnSubmit"  type="submit" value="Envoyer" />
+					</p>
+				</fieldset>
+				
+			</form>
+
+
+
+
+
+
+		</div>
+		
+		<footer>
+			<div id="pied-page">
+				<nav id="nav-pied-page">
+					<ul>
+						<li><h4><a href="index.html">Accueil</a></h4></li>
+					</ul>
+					
+					<ul>
+						<li><h4>Nos animaux</h4></li>
+						<li><a href="#">Tous</a></li>
+						<li><a href="#">Amphibiens</a></li>
+						<li><a href="lion.html">Mammifères</a></li>
+						<li><a href="ara_militaire.html">Oiseaux</a></li>
+						<li><a href="#">Reptiles</a></li>
+					</ul>
+					
+					<ul>
+						<li><h4>Zoo parc</h4></li>
+						<li><a href="#">Cité marine</a></li>
+						<li><a href="#">Chemin brousse</a></li>
+						<li><a href="#">Piste safari</a></li>
+						<li><a href="#">Sentier des Incas</a></li>
+						<li><a href="#">Temple jungle</a></li>
+					</ul>
+					<ul>
+						<li><h4><a href="#">Spectacles</a></h4></li>
+					</ul>
+					<ul>
+						<li><h4><a href="#">Tarifs</a></h4></li>
+					</ul>				
+					<ul>
+						<li><h4>Infos Zoo</h4></li>
+						<li><a href="#">Réglements</a></li>
+						<li><a href="#">Restauration</a></li>
+						<li><a href="#">Services</a></li>
+					</ul>
+					
+					<ul>
+						<li><h4>Contactez-nous</h4></li>
+						<li><a href="#">Votre question</a></li>
+						<li><a href="#">Bénévolat</a></li>
+						<li><a href="#">Services</a></li>
+					</ul>
+					
+				</nav><!-- fin nav pied page -->
+			</div> <!-- fin pied-page -->
+			<div id="containerReturn">
+				<div id="returnOnTop">
+					<a href="#haut" title="Retour en haut">
+						<img src="images/haut-page.png" alt="haut page" />
+					</a>
+				</div>
+			</div>
+			
+
+			<p id="copyright">
+				&copy; 2017 Florimond Jouffroy | <a href="mailto:florimond.25@gmail.com">Florimond.25@gmail.com</a><br/>
+				Réalisé dans le cadre scolaire de 1<sup>re</sup> session au collégial
+			</p>
+			
+		</footer>
+	</div>
+	
+</body>
+</html>

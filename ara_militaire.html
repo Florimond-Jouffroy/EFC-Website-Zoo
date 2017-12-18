@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Ara Militaire - Oiseaux - Zoo de Matanie</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize-v7.css">
+	<script src="js/script.js"></script>
+	<script src="js/bd-araMilitaire.js"></script>
+</head>
+<body onload="affBanniere('oiseaux',6)" id="haut">
+		<div id="main-wrapper">
+		<header>
+			<div id="header-top">
+				
+				<h1 id="logo"><a href="index.html">Zoo de Matanie</a></h1>
+				
+				<nav id="nav-utilitaire">
+					<ul>
+						<li><a href="#">Conservation</a></li>
+						<li><a href="#">Recrutement</a></li>
+						<li><a href="parrainage.html">Parrainage</a></li>
+						<li><a href="#">Fondation</a></li>
+						<li><a href="#">English</a></li>
+					</ul>
+				</nav>
+			</div>	
+			
+			<div id="header-banner">
+				
+			</div>
+			
+		</header>
+		<div id="nav-bar">
+			<nav id="nav-principale">
+				<ul id="menu-deroulant">
+					<li ><a href="index.html">Accueil</a></li>          
+
+					<li id="actif"> 	<!-- mettre le chevron font-awesome ds le a laisser un espace devant -->
+						<a href="#">Nos animaux <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+						<ul class="sous-menu">
+							<li><a href="#">Tous</a></li>
+							<li><a href="#">Amphibiens</a></li>
+							<li><a href="lion.html">Mammifères</a></li>
+							<li><a href="#">Oiseaux</a></li>
+							<li><a href="#">Reptiles</a></li>
+						</ul>
+					</li> 
+					
+					<li>
+						<a href="activites.html">Zoo parc <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+						<ul class="sous-menu">
+							<li><a href="#">Cité marine</a></li>
+							<li><a href="#">Chemin brousse</a></li>
+							<li><a href="#">Piste safari</a></li>
+							<li><a href="#">Sentier des Incas</a></li>
+							<li><a href="#">Temple jungle</a></li>
+						</ul>
+
+					</li> 
+					<li><a href="#">Spectacles</a></li>
+					<li><a href="#">Tarifs</a></li>
+					<li>
+						<a href="#">Infos Zoo <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+						<ul class="sous-menu">
+							<li><a href="#">Règlements</a></li>
+							<li><a href="#">Restauration</a></li>
+							<li><a href="#">Services</a></li>
+						</ul>
+					</li>
+					
+					<li>
+						<a href="#">Contactez-nous <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+						<ul class="sous-menu">
+							<li><a href="#">Votre question</a></li>
+							<li><a href="benevolat.html">Bénévolat</a></li>
+						</ul>
+					</li>
+				</ul>
+
+				<!-- moteur de recherche ... -->
+				<div id="loupe">
+					<a onclick="showHide()">
+						<img src="images/search.png" alt="" />
+					</a>
+				</div>
+				<div id="form-recherche" > <!-- onmouseout="showHide('form-recherche')" -->
+					<form>
+						<input type="search" name="search" placeholder="Rechercher sur le site" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Rechercher sur le site'">
+						<input type="submit" name="submit" value="Rechercher">
+					</form>
+				</div>
+				
+			</nav>	<!-- fin menu-deroulant --> 
+		</div> <!-- fin nav-bar -->
+
+		<div id="content">
+			<ul id="nav-reseaux-sociaux">
+				<li><a href="#facebook"><img src="images/reseaux-sociaux/facebook.png"  alt="facebook" /></a></li>
+				<li><a href="#google"><img src="images/reseaux-sociaux/google+.png" alt="google+" /></a></li>
+				<li><a href="#instagram"><img src="images/reseaux-sociaux/instagram.png" alt="instagram" /></a></li>
+				<li><a href="#pinterest"><img src="images/reseaux-sociaux/pinterest.png" alt="pinterest" /></a></li>
+				<li><a href="#twitter"><img src="images/reseaux-sociaux/twitter.png" alt="twitter" /></a></li>
+				<li><a href="#youtube"><img src="images/reseaux-sociaux/youtube.png" alt="youtube" /></a></li>
+			</ul>
+			<div class="centre">
+				<h2 class="centre">ARA MILITAIRE</h2>
+				<img src="images/Ara-militaire.png" alt="Ara Militaire">
+			</div>
+			<div class="container">
+				<div class="item">
+					<p>
+						Le Ara Militaire a le plumage vert clair sur la tête et vert olive sur le cou, le dos et les ailes tandis que son front est rouge. C’est le premier perroquet connu en Europe car, déjà pendant l’invasion du Mexique, il a été décrit comme oiseau ayant une grande valeur pour les Incas.
+					</p>
+					<h3>MODE DE VIE :</h3>
+					<p>
+						L’Ara militaire vit généralement en couple fidèle, mais peut se déplacer en groupes d’une vingtaine d’individus dans la recherche de la nourriture. Les couples passent beaucoup de temps à se toiletter, renforçant ainsi leurs liens conjugaux. Ils aiment également se percher aux sommets des arbres et s’envoler en criant bruyamment au moindre dérangement. A la différence des autres Aras, la répartition géographique de l’Ara militaire est discontinue, ce qui a permis la formation de trois sous-espèces. Au ZOO, nous hébergeons une sous-espèce provenant du Mexique (A. m. mexicana).
+					</p>
+					<h3>CONSERVATION :</h3>
+					<p>
+						Menaces : Son habitat est menacé à cause de la déforestation incessante. Les jeunes sont également capturés pour devenir des oiseaux de compagnie.<br>
+						Statut de protection : Convention de Washington, Annexe I A (CITES)<br>
+						Statut UICN : Vulnérable (VU).
+					</p>
+					<h3>LE SAVIEZ-VOUS ?</h3>
+					<p>
+						Les paléontologues n’ont pas trouvé de traces fossilisées indiquant les origines de la famille des perroquets. Cependant, selon l’analyse des coquilles de leurs œufs, il est très probable que ces beaux oiseaux sont des proches parents de nos pigeons !
+					</p>
+				</div>
+				<div class="item">
+					<img src="images/Ara-militaire-3.jpg" alt="Ara Militaire en vol">
+					<img src="images/Ara-militaire-2.png" alt="Ara Militaires">
+				</div>		
+			</div>
+
+			<div id="mini-quiz">
+	      		<form id="form-mini-quiz" method="post">
+	          		<fieldset>
+	            		<legend>Les Ara-Militaires</legend>
+
+	      				<p>Quelle couleur est dominante sur le plumage du Ara-Militaire ?</p>
+	      				
+	                	<ul>
+	                    	<li>
+	                    		<input name="quizAra" id="a" type="radio" value="a" onclick="repUtil = 'a'"/>
+	                    		<label id="choix-a" for="a">Bleu</label>
+	                    	</li>
+							<li>
+								<input name="quizAra" id="b" type="radio" value="b" onclick="repUtil = 'b'"/>
+								<label id="choix-b" for="b">Rouge</label>
+							</li>
+							<li>
+								<input name="quizAra" id="c" type="radio" value="c" onclick="repUtil = 'c'"/>
+								<label id="choix-c" for="c">Vert</label>
+							</li>
+							<li>
+								<input name="quizAra" id="d" type="radio" value="d" onclick="repUtil = 'd'"/>
+								<label id="choix-d" for="d">Jaune</label>
+							</li>
+	                    	
+	                	</ul>
+	        			
+	         			<input id="btnSubmit" type="submit" value="Réponse" onclick="return verifierReponse('quizAra')" />
+						<input id="btnReset" type="reset" value="Recomencer" onclick="initMiniQuiz()" />
+	      			</fieldset>
+				</form>
+				<div id="zone-message">
+					<img id="zoologiste" src="images/personnageZoo.jpg" alt="Zoologiste" />
+					<p id="message">TESTEZ VOS CONNAISSANCES</p>
+					
+				</div>
+			</div>
+			
+
+
+		</div>	
+		<footer>
+			<div id="pied-page">
+				<nav id="nav-pied-page">
+					<ul>
+						<li><h4><a href="index.html">Accueil</a></h4></li>
+					</ul>
+					
+					<ul>
+						<li><h4>Nos animaux</h4></li>
+						<li><a href="#">Tous</a></li>
+						<li><a href="#">Amphibiens</a></li>
+						<li><a href="lion.html">Mammifères</a></li>
+						<li><a href="ara_militaire.html">Oiseaux</a></li>
+						<li><a href="#">Reptiles</a></li>
+					</ul>
+					
+					<ul>
+						<li><h4>Zoo parc</h4></li>
+						<li><a href="#">Cité marine</a></li>
+						<li><a href="#">Chemin brousse</a></li>
+						<li><a href="#">Piste safari</a></li>
+						<li><a href="#">Sentier des Incas</a></li>
+						<li><a href="#">Temple jungle</a></li>
+					</ul>
+					<ul>
+						<li><h4><a href="#">Spectacles</a></h4></li>
+					</ul>
+					<ul>
+						<li><h4><a href="#">Tarifs</a></h4></li>
+					</ul>				
+					<ul>
+						<li><h4>Infos Zoo</h4></li>
+						<li><a href="#">Réglements</a></li>
+						<li><a href="#">Restauration</a></li>
+						<li><a href="#">Services</a></li>
+					</ul>
+					
+					<ul>
+						<li><h4>Contactez-nous</h4></li>
+						<li><a href="#">Votre question</a></li>
+						<li><a href="benevolat.html">Bénévolat</a></li>
+						<li><a href="#">Services</a></li>
+					</ul>
+					
+				</nav><!-- fin nav pied page -->
+			</div> <!-- fin pied-page -->
+			
+			<div id="containerReturn">
+				<div id="returnOnTop">
+					<a href="#haut" title="Retour en haut">
+						<img src="images/haut-page.png" alt="haut page" />
+					</a>
+				</div>
+			</div>
+
+			<p id="copyright">
+				&copy; 2017 Florimond Jouffroy | <a href="mailto:florimond.25@gmail.com">Florimond.25@gmail.com</a><br/>
+				Réalisé dans le cadre scolaire de 1<sup>re</sup> session au collégial
+			</p>
+			
+		</footer>
+	</div>
+</body>
+</html>
